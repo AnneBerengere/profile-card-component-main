@@ -1,0 +1,272 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background{
+    position: fixed;
+    z-index: -100;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 70px -10px hsl(185, 75%, 30%);
+}
+
+.image_background {
+    width: 100%;
+}
+
+.image_background>img {
+    width: 100%;
+    height: auto;
+}
+
+.container_identity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+}
+
+.photo {
+    position: absolute;
+    top: -46px;
+    border-radius: 100%;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.photo>img {
+    width: 100%;
+    height: auto;
+}
+
+.identity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 44.8px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-right: 0.5em;
+}
+
+.numbers {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+}
+
+.container_stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers_stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    margin-bottom: 5.5px;
+}
+
+.text_stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 0.15em;
+}
+
+.attribution {
+    margin-top: 1em;
+}
+
+/*ordinateur*/
+@media only screen and (min-width: 651px) {
+
+    .background{
+        width: 300px;
+        height: 321px;
+    }
+
+    .top {
+        position: absolute;
+        top: -710px;
+        left: -840px;
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: -810px;
+        right: -775px;
+    }
+
+    .card {
+        width: 300px;
+        height: 321px;
+    }
+
+    .image_background {
+        height: 120px;
+    }
+
+    .container_identity {
+        min-height: 124px;
+    }
+
+    .photo {
+        width: 82px;
+        height: 82px;
+    }
+
+    .name {
+        font-size: 0.85em;
+    }
+
+    .numbers {
+        font-size: 0.85em;
+    }
+
+    .city {
+        font-size: 0.65em;
+    }
+
+    .stats {
+        padding-top: 4px;
+    }
+
+    .container_stats {
+        width: 85px;
+    }
+
+    .numbers_stats {
+        font-size: 0.84em;
+    }
+
+    .text_stats {
+        font-size: 0.45em;
+    }
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 650px) {
+
+    .background{
+        width: 325px;
+        height: 374px;
+    }
+
+    .top {
+        position: absolute;
+        top: -630px;
+        left: -630px;
+        width: 810px;
+    }
+
+    .bottom {
+        position: absolute;
+        bottom: -620px;
+        right: -590px;
+        width: 810px;
+    }
+
+    .card {
+        width: 325px;
+        height: 374px;
+    }
+
+    .image_background {
+        height: 140px;
+        overflow: hidden;
+    }
+
+    .container_identity {
+        min-height: 144px;
+    }
+
+    .photo {
+        width: 99px;
+        height: 99px;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+
+    .numbers {
+        font-size: 1em;
+    }
+
+    .city {
+        font-size: 0.75em;
+    }
+
+    .stats {
+        padding-top: 10px;
+    }
+
+    .container_stats {
+        width: 91px;
+    }
+
+    .numbers_stats {
+        font-size: 1em;
+    }
+
+    .text_stats {
+        font-size: 0.55em;
+    }
+
+}
